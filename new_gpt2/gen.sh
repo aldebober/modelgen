@@ -1,0 +1,11 @@
+python run_clm.py \
+--model_type gpt2-medium \
+--model_name_or_path gpt2-medium \
+--train_file "train_tmp.txt" \
+--do_train \
+--validation_file "eval_tmp.txt" \
+--do_eval \
+--save_steps -1 \
+--num_train_epochs 5 \
+--per_device_train_batch_size 1 \
+--output_dir=model
